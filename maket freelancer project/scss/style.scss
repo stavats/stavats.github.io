@@ -1,0 +1,371 @@
+// === Mixins ===
+@mixin font-main {
+    font-family: 'Montserrat', sans-serif;
+}
+@mixin font-secondary {
+    font-family: 'Open Sans', sans-serif;
+}
+@mixin font-third {
+    font-family: 'Domine', serif;
+}
+// === Mixins ===
+
+// === Colors ===
+$color-white: #ffffff;
+// === /Colors ===
+
+// === Common ===
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.section-outer {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.section-inner {
+    max-width: 940px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.red {
+    color: red;
+}
+// === /Common ===
+
+// === header ===
+.section-header {
+    background: url('../img/background-header.png') no-repeat;
+    background-size: cover;
+    
+    .section-inner {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &-logo-and-nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &-nav {
+        padding-top: 29px;
+        display: flex;
+           
+        li {
+            @include font-main;
+
+            &:not(:first-child) {
+                margin-left: 29px;
+            }
+
+            list-style: none;
+
+            a {
+                font-size: 14px;
+                font-weight: bold;
+                color: #263742;
+                text-decoration: none;
+                text-transform: uppercase;
+
+                &.red {
+                    color: red;
+                }
+            }
+
+           
+        }
+    }
+
+    &-logo {
+        top: 0; 
+        background-color: #fa5c65;
+        border-radius: 0 0 7px 7px;
+        width: 140px;
+        height: 74px;   
+        
+        &_text {
+            @include font-third;
+            
+            font-size: 20px;
+            text-align: center;
+            padding-top: 40px;
+            color: $color-white; 
+        }
+    }
+
+    &-content {
+        flex-basis: 540px;
+
+        &-wrapper {
+            display: flex;
+            flex-grow: 1;
+            align-items: center;
+        }
+
+        &-title {
+            @include font-main;
+
+            font-size: 48px;
+            font-weight: bold;
+            line-height: 53px;
+            color: #314a5b;
+            text-transform: uppercase;              
+        }
+
+        &-subtitle {
+            @include font-secondary;
+
+            margin-top: 26px;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 40px;
+            color: #314a5b;
+        }
+
+        &-button {
+            @include font-secondary;
+
+            margin-top: 41px;
+
+            .btn-main {
+                font-size: 15px;
+                font-weight: 700;
+                line-height: 48px;
+                color: $color-white;
+                width: 171px;
+                height: 64px;
+                border: none;
+                border-radius: 7px;
+                background: #fa5c65;
+                cursor: pointer;
+            } 
+        }
+    }
+}
+// === /header ===  
+
+// === offer ===
+.section-offer {
+    margin-top: 86px;
+    display: flex;
+    justify-content: space-between;
+
+    &-item {
+        flex-basis: 300px;
+        }
+
+    &-snip {
+        
+        &_title {
+            @include font-main;
+
+            font-size: 26px;
+            font-weight: 700;
+            color: #314a5b;
+            text-transform: uppercase;
+        }
+        &_text {
+            @include font-secondary;
+
+            margin-top: 24px;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 22px;
+            color: #9aa0ab;
+        }
+        &_more {
+            @include font-main;
+
+            margin-top: 29px;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 20px;
+            
+            .red {
+                color: #fa5c65;
+                text-decoration: none;
+                cursor: pointer;
+            }
+        }
+    }
+}
+// === /offer === 
+
+// === portfolio ===
+.section-portfolio {
+    margin-top: 104px;
+    display: flex;
+
+    &-content {
+        margin-left: 82px;
+        flex-grow: 1;
+
+        &_title{
+            @include font-main;
+
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 46px;
+            color: #314a5b;
+            text-transform: uppercase;
+        }
+        &_subtitle{
+            @include font-secondary;
+
+            margin-top: 17px;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 20px;
+            color: #314a5b;
+        }
+        &_text{
+            @include font-secondary;
+
+            margin-top: 29px;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 22px;
+            color: #9aa0ab;
+        }
+        &_more {
+            @include font-main;
+
+            margin-top: 40px;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 20px;
+            
+            .red {
+                color: #fa5c65;
+                text-decoration: none;
+                cursor: pointer;
+            }
+        }
+    }
+}  
+// === /portfolio ===
+
+// === team ===
+.section-team {
+    margin-top: 105px;
+
+    &-description {
+        
+
+        &_title {
+            @include font-main;
+
+            font-size: 32px;
+            font-weight: 700;
+            text-transform: uppercase;
+            line-height: 53px;
+            color: #314a5b;
+        }
+        &_subtitle {
+            @include font-secondary;
+
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 20px;
+            color: #9aa0ab;
+        }
+    }
+    
+    &-squad {
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-between;
+        
+        &_content {
+            display: flex;
+            flex-basis: 300px;
+
+            &-photo {
+                width: 120px;
+                height: 120px;
+                overflow: hidden;
+                border-radius: 50%;
+            }
+            
+            &-info {
+                padding-left: 21px;
+                flex-grow: 1;
+
+                &_name {
+                    @include font-main;
+
+                    font-size: 22px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    color: #314a5b;
+                }
+
+                &_profession {
+                    @include font-secondary;
+
+                    font-size: 14px;
+                    font-weight: 400;               
+                    color: #f0454c;
+                }
+
+                &_text {
+                    @include font-secondary;
+
+                    margin-top: 13px;
+                    font-size: 14px;
+                    font-weight: 400;               
+                    color: #9aa0ab;
+                }
+            }
+        }
+
+        &_more {
+            @include font-main;
+
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 20px;
+            margin-top: 50px;
+            text-align: right;
+            
+            .red {
+                color: #fa5c65;
+                text-decoration: none;
+                cursor: pointer;
+            }
+        }
+    }
+}
+// === /team === 
+
+// === footer ===
+.section-footer {
+    border-top: 1px solid #e6eaed;
+    margin-top: 62px;
+    display: flex;
+    padding-top: 25px;
+    padding-bottom: 40px;
+    justify-content: space-between;
+
+    &-socnet {
+       font-size: 25px;
+
+       a {
+            color: #9aa0ab;
+            text-decoration: none;
+       }
+
+       .fa-facebook, .fa-instagram {
+           margin-left: 20px;
+       }
+    }
+
+    &-copyright {
+        color: #9aa0ab;
+    }
+}
+// === /footer === 
