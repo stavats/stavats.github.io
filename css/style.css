@@ -1,0 +1,27 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.example {
+    padding-left: 50px;
+}
+
+.btn {
+    text-align: center;
+}
+.btn-main {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    margin: 0;
+    padding: 16px 20px;
+    outline: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    border: none;
+    background: linear-gradient(to right, #fe985b, #fe4fa7);
+    color: #ffffff; }
+    .btn-main:hover {
+      background: linear-gradient(to right, #fe4fa7, #fe985b); }
