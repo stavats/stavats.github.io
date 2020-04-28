@@ -1,0 +1,180 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif; }
+
+.section-header {
+  background: url("../img/background_header.png") no-repeat;
+  background-size: cover;
+  position: relative; }
+  .section-header .section-inner {
+    height: 900px;
+    position: relative;
+    z-index: 10; }
+  .section-header::before {
+    content: '';
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8); }
+  .section-header-top {
+    padding-top: 40px;
+    padding-left: 212px;
+    display: flex; }
+    .section-header-top_slogan {
+      font-size: 26px;
+      font-weight: 400;
+      color: #ffffff; }
+    .section-header-top_nav {
+      padding-top: 8px;
+      padding-left: 400px;
+      display: flex;
+      font-size: 18px;
+      font-weight: 700;
+      list-style: none; }
+      .section-header-top_nav li {
+        padding-left: 40px; }
+        .section-header-top_nav li a {
+          text-decoration: none;
+          text-transform: uppercase;
+          color: #ffffff; }
+          .section-header-top_nav li a.active {
+            color: #fb2274; }
+  .section-header-title {
+    padding-top: 270px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 100px;
+    font-weight: 800; }
+    .section-header-title span.active {
+      display: block;
+      color: #fb2274; }
+  .section-header-subtitle {
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 400; }
+
+.section-about {
+  padding-top: 100px;
+  text-align: center; }
+  .section-about-title {
+    font-size: 48px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #444444; }
+  .section-about-text {
+    padding-top: 64px;
+    font-size: 28px;
+    font-weight: 400;
+    display: inline-block;
+    width: 950px;
+    text-align: center;
+    color: #a9a9a9; }
+  .section-about-button {
+    padding-top: 42px; }
+    .section-about-button .btn-main {
+      padding: 23px 50px;
+      background: #ffffff;
+      border: 2px solid #fd91ba;
+      font-size: 24px;
+      font-weight: 400;
+      color: #fd91ba;
+      text-decoration: none;
+      color: #fb2274;
+      cursor: pointer; }
+
+.section-services {
+  margin-top: 100px;
+  background-color: #fafafa;
+  text-align: center; }
+  .section-services-title {
+    padding-top: 100px;
+    font-size: 48px;
+    font-weight: 800;
+    color: #444444;
+    text-transform: uppercase; }
+  .section-services-subtitle {
+    padding-top: 48px;
+    font-size: 28px;
+    font-weight: 400;
+    color: #a9a9a9;
+    width: 820px;
+    display: inline-block; }
+  .section-services-work {
+    padding-top: 94px;
+    padding-bottom: 70px;
+    justify-content: center;
+    display: flex; }
+    .section-services-work_content {
+      padding-right: 30px; }
+      .section-services-work_content-pic {
+        width: 370px;
+        height: 364px; }
+      .section-services-work_content-text {
+        padding-top: 32px;
+        padding-bottom: 32px;
+        font-size: 24px;
+        font-weight: 800;
+        color: #444444;
+        text-transform: uppercase;
+        background-color: #ffffff; }
+
+.section-footer {
+  display: flex; }
+  .section-footer-map {
+    background: url("../img/pic_map.png");
+    width: 670px;
+    height: 700px; }
+  .section-footer-container {
+    padding-top: 100px;
+    justify-content: center;
+    display: block;
+    clear: both;
+    text-align: center;
+    margin: 0 auto;
+    width: 500px; }
+    .section-footer-container_title {
+      font-size: 48px;
+      font-weight: 800;
+      color: #444444;
+      text-transform: uppercase;
+      padding-bottom: 60px; }
+    .section-footer-container_form input {
+      width: 470px;
+      padding-left: 30px;
+      margin-bottom: 20px;
+      height: 56px;
+      background-color: #fafafa;
+      font-size: 18px;
+      font-weight: 300;
+      border: 1px solid #efefef; }
+    .section-footer-container_form textarea {
+      height: 156px;
+      width: 495px;
+      outline: none;
+      resize: none;
+      border: 1px solid #efefef;
+      background-color: #fafafa; }
+      .section-footer-container_form textarea::placeholder {
+        padding-left: 20px;
+        padding-top: 10px;
+        font-size: 18px;
+        font-weight: 300; }
+    .section-footer-container .btn-main {
+      width: 502px;
+      height: 56px;
+      margin-top: 20px;
+      background: #ffffff;
+      border: 2px solid #fd91ba;
+      font-size: 24px;
+      font-weight: 400;
+      color: #fd91ba;
+      text-decoration: none;
+      color: #fb2274;
+      cursor: pointer; }
